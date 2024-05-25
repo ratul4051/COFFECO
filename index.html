@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <script src="page.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+  
+    <div class="header">
+        <a href="index.html" class="logo">COFFECO</a>
+        <div class="header-right">
+          <a class="active" href="index.html">Home</a>
+          <a href="services.html">Menu</a>
+          <a href="contact.html">Contact</a>
+         
+          <a href="about.html">About</a>
+          <a href="login.html">Log In</a>
+        </div>
+      </div>
+      <div class="container">
+        <h1 class="coffe1"> We Serve The Best Quality Of Coffee</h1>
+        
+        <button class="batn"><a href="services.html">Explore</a></button>
+    <div class="container2">
+  <div class="item1">
+    <img src="high-quality.png">
+    <p>Best Quality </p><br>
+   
+    
+  </div>
+  <div class="item1">
+   
+    <img src="quick.png">
+    <p> Fast Delivery</p>
+  </div>
+  <div class="item1">
+    <img src="review (1).png">
+    <p>Customer Satisfaction</p>
+  </div>
+</div>
+<div class="container3">
+<div class="portion">
+<img src="coffe1.jpg">
+</div>
+<div class="portion portion1">
+  <h3>
+COFFECO
+  </h3>
+  <h1>
+    Best Coffe Shop In The Town!
+  </h1>
+  <p>Introducing The Best Coffe Shop In the Town.<br>
+  Here We Are To Serve You The Best Quality</p>
+  <button class="batn2"><a href="about.html">About Us</a></button>
+</div>
+</div>
+<h1 class="heading1">Some Of Our Product</h1>
+<section>
+  <ul>
+    <li class="list active" data-filter="All">All</li>
+    <li class="list" data-filter="Coffe">Coffe</li>
+    <li class="list" data-filter="Shake">Shake</li>
+    <li class="list" data-filter="Tea">Tea</li>
+    <li class="list" data-filter="Drinks">Drinks</li>
+
+    
+    
+   
+  </ul>
+  <div class="product">
+    <div class="itembox Coffe"> <img src="Capacino.jpg"></div>
+    <div class="itembox Coffe"> <img src="Americano.jpg"></div>
+    <div class="itembox Tea"> <img src="dudtea.jpg"></div>
+    <div class="itembox Shake"> <img src="Ckshake.jpg">
+    </div> 
+    <div class="itembox Drinks"> <img src="lemonade.jpg"></div>
+    <div class="itembox Tea"> <img src="black tea.jpg">
+    </div><div class="itembox Drinks"> <img src="lemon.jpg"></div>
+    <div class="itembox Coffe"> <img src="All.jpg"></div>
+
+    
+
+  
+  </div>
+</section>
+<script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+     $(document).ready(function(){
+    $('.list').click(function(){
+      const value = $(this).attr('data-filter');
+      if (value == 'All'){
+        $('.itembox').show('1000');
+      }
+      else{
+        $('.itembox').not('.'+value).hide('1000');
+        $('.itembox').filter('.'+value).show('1000');
+      }
+    })
+  })
+  $('.list').click(function(){
+    $(this).addClass('active').siblings().removeClass('active');
+  })
+  </script>
+
+<footer>
+  <p>&copy; 2024 All Rights Reserve To COFFECO</p>
+</footer>
+     </body>
+</body>
+</html>

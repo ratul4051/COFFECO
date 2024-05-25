@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>   <header>
+    <h1>COFFECO</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Menu</a></li>
+           
+            <li><a href="contact.html" >Contact</a></li>
+            <li><a href="about.html" >About</a></li>
+            <li><a href="login.html"class="active">Log In</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <div class="container7">
+    <div class="login-container">
+        <form id="loginForm" method="POST" action="login.php">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+            <div id="error-message"></div>
+        </form>
+     
+        <div class="form-container">
+            <form id="registrationForm" method="POST" action="register.php">
+                <h2>Register</h2>
+                <div class="input-group">
+                    <label for="register-username">Username:</label>
+                    <input type="text" id="register-username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-password">Password:</label>
+                    <input type="password" id="register-password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-password-confirm">Confirm Password:</label>
+                    <input type="password" id="register-password-confirm" required>
+                </div>
+                <button type="submit">Register</button>
+                <div id="register-error-message" class="error-message"></div>
+            </form>
+        </div>
+    </div>
+</div>
+    <script src="page.js"></script> 
+   
+
+</body>
+</html>
